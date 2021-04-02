@@ -1,0 +1,12 @@
+<launch> 
+
+    <node pkg="rosservice" type="rosservice" name="delete_fast_food" args="call gazebo/delete_model '{model_name: Fast Food}'"/>    
+    <node pkg="rosservice" type="rosservice" name="house_2_c" args="call gazebo/delete_model '{model_name: house_2_c}'"/> 
+    <node pkg="rosservice" type="rosservice" name="house_2" args="call gazebo/delete_model '{model_name: House 2}'"/> 
+    <node pkg="rosservice" type="rosservice" name="gas_station" args="call gazebo/delete_model '{model_name: Gas Station}'"/> 
+<!-- push table_description to factory and spawn robot in gazebo -->
+    <node name="spawn_stop_sign" pkg="gazebo_ros" type="spawn_model" args=" -database stop_sign -gazebo -model stop_sign  -y 90 -x 153" respawn="false" output="screen" />
+    <node name="spawn_house_2" pkg="gazebo_ros" type="spawn_model" args=" -database house_2 -gazebo -model 'House 2'  -y -12 -x 30" respawn="false" output="screen" />
+    <node name="spawn_gas_station" pkg="gazebo_ros" type="spawn_model" args="-database gas_station -gazebo -model gas_station  -y 117.5 -x 190" />
+  
+</launch>

@@ -1,0 +1,6 @@
+<launch>
+
+    <node pkg="final_project" type="dynamic_obstacle.py" name="moving_obstacle" output="screen" />
+ 
+
+</launch>

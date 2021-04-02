@@ -1,0 +1,8 @@
+<launch> 
+
+    <!-- user:~$ rosservice call gazebo/delete_model '{model_name: barrel_1}' -->
+    <node pkg="rosservice" type="rosservice" name="delete_barrel_1" args="call gazebo/delete_model '{model_name: barrel_1}'"/>    
+    <node pkg="rosservice" type="rosservice" name="delete_barrel_2" args="call gazebo/delete_model '{model_name: barrel_2}'"/>    
+    <node pkg="rosservice" type="rosservice" name="delete_barrel_3" args="call gazebo/delete_model '{model_name: barrel_3}'"/>     
+  
+</launch>

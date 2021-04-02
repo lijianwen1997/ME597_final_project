@@ -1,0 +1,6 @@
+<launch> 
+    <node name="spawn_barrel_1" pkg="gazebo_ros" type="spawn_model" args="-database construction_barrel -gazebo -model barrel_1  -y -1 -x 30" />
+    <node name="spawn_barrel_2" pkg="gazebo_ros" type="spawn_model" args="-database construction_barrel -gazebo -model barrel_2  -y 1 -x 60" />
+    <node name="spawn_barrel_3" pkg="gazebo_ros" type="spawn_model" args="-database construction_barrel -gazebo -model barrel_3  -y 5 -x 108" />
+    
+</launch>
